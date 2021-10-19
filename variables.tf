@@ -13,3 +13,5 @@ variable "emailrecipient" {}
 variable "networkbitspersec" {}
 
 variable "networkbitsoutpersec" {}
+
+variable "resourcegroup" {}
