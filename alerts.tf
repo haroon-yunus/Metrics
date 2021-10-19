@@ -11,7 +11,7 @@ resource "azurerm_monitor_action_group" "main" {
 
 resource "azurerm_monitor_metric_alert" "networkbitspersec" {
   name                = var.networkbitspersec
-  resource_group_name = azurerm_resource_group.main.name
+  resource_group_name = var.resourcegroup
   scopes              = [azurerm_network_interface.to_monitor.id]
   description         = "Action will be triggered when Bits ingressing Azure per second is greater than XX."
 
